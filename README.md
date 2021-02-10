@@ -2,4 +2,4 @@
 
 Desktop app for xCore
 
-![](https://sun9-60.userapi.com/impf/Zsam-6dGcszvvlUSm4aYphreuMtYrUl97eaoLQ/ipLiaNhkTE8.jpg?size=1280x800&quality=96&proxy=1&sign=5d064f5e54b98e03244a87eede139d3e&type=album)
+![](https://sun9-10.userapi.com/impf/1vwpdeawEYpDCLXB1PM4tNAWiKfhxoqle_VRhw/lMtLOkSX2jI.jpg?size=1280x800&quality=96&proxy=1&sign=c8542f8f6272e11aed6754da3e1d757a&type=album)
