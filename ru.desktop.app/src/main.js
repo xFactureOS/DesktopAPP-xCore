@@ -4,6 +4,12 @@
 
 ****************************************************/
 
+function ready() {
+    
+    document.getElementById("loader").style.display = "none";
+
+}
+
 function loadapps() {
 
     document.getElementById("apps").innerHTML = "";
@@ -187,8 +193,19 @@ function wins(win, head) {
 
             moveWin(e);
         
-        };
+        }
 
-    };
+        win.onmouseup = function() {
+            document.onmousemove = null;
+            win.onmouseup = null;
+        }
+
+    }
+
+    win.ondragstart = function() {
+            
+        return false;
+
+    }
 
 }

@@ -18,7 +18,7 @@ margin: 0px;
 
 background-color: #272833;
 
-background-image: url(apps/ru.desktop.app/res/images/bg.jpg);
+background-image: url(apps/ru.desktop.app/res/images/bg.png);
 
 background-position: center;
 
@@ -176,6 +176,14 @@ height: 390px;
 
 border-radius: 5px;
 
+overflow-y: scroll;
+
+}
+
+#windowmenu > #apps::-webkit-scrollbar {
+
+display: none;
+
 }
 
 #windowmenu > #apps > #none {
@@ -294,11 +302,84 @@ opacity: 0.8;
 
 }
 
+#loader {
+
+display: block;
+
+position: absolute;
+
+width: 100%;
+
+height: 100%;
+
+background-color: #272833;
+
+z-index: 10000;
+
+}
+
+#loader > #loads {
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+margin-top: -40px;
+
+margin-left: -40px;
+
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
 </style>
 
 </head>
 
-<main id="desktop">
+<main id="desktop" onload="ready()">
+
+<layer id="loader">
+
+    <layer id="loads">
+
+        <layer class="lds-ripple"><layer></layer><layer></layer></layer>
+
+    </layer>
+
+</layer>
 
 <layer id="windowmenu">
 

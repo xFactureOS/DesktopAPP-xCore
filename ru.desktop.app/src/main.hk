@@ -1,5 +1,9 @@
 pclass Activity {
-def main() {
-setContentView("apps/ru.desktop.app/res/layout/main.hell");
-}
+
+    def main() {
+
+        setContentView("apps/ru.desktop.app/res/layout/main.hell");
+
+    }
+
 }
